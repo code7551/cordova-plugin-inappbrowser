@@ -47,11 +47,11 @@ public class InAppBrowserDialog extends Dialog {
         } else {
             // better to go through the in inAppBrowser
             // because it does a clean up
-            if (this.inAppBrowser.hardwareBack() && this.inAppBrowser.canGoBack()) {
+            // if (this.inAppBrowser.hardwareBack() && this.inAppBrowser.canGoBack()) {
                 this.inAppBrowser.goBack();
-            }  else {
-                this.inAppBrowser.closeDialog();
-            }
+            // }  else {
+            //     this.inAppBrowser.closeDialog();
+            // }
         }
     }
 }
